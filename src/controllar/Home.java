@@ -32,6 +32,7 @@ public class Home extends HttpServlet {
 		
 		String action = request.getParameter("action");
 		String page = null;
+		String test;
 		
 		if(action.equals("login"))
 			page = "/view/loginform.jsp";
