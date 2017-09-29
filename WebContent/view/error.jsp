@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-This is error.jsp
+카드번호를 다시 확인해주세요.
 </body>
 </html>

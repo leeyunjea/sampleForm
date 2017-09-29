@@ -16,9 +16,9 @@ public class CustomerService {
 		
 		addCustomer(new Customer("id001", "1234", "이윤재"));
 		addCustomer(new Customer("id002", "1234", "이예지"));
-		addCustomer(new Customer("id002", "1234", "김하늘"));
-		addCustomer(new Customer("id002", "1234", "홍성문"));
-		addCustomer(new Customer("id002", "1234", "최원균"));
+		addCustomer(new Customer("id003", "1234", "김하늘"));
+		addCustomer(new Customer("id004", "1234", "홍성문"));
+		addCustomer(new Customer("id005", "1234", "최원균"));
 	}
 	
 	private void addCustomer(Customer customer) {
