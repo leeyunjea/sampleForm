@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Home
  */
-@WebServlet(name = "home", urlPatterns = { "/home" })
+//@WebServlet(name = "home", urlPatterns = { "/home" })
+@WebServlet("/home")
 public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -32,7 +33,6 @@ public class Home extends HttpServlet {
 		
 		String action = request.getParameter("action");
 		String page = null;
-		String test;
 		
 		if(action.equals("login"))
 			page = "/view/loginform.jsp";

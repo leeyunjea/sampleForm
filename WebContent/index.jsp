@@ -9,8 +9,8 @@
 <body>
 
 	This is homepage for shopping
-	<p><a href="/helloMVC/home?action=login">go to login page</a></p>
-	<p><a href="/helloMVC/home?action=help">go to help page</a></p>
+	<p><a href="/sampleForm_first_homework/home?action=login">go to login page</a></p>
+	<p><a href="/sampleForm_first_homework/home?action=help">go to help page</a></p>
 	
 </body>
 </html>

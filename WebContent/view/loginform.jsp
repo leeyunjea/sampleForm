@@ -8,9 +8,10 @@
 </head>
 <body>
 
-	<form action="/helloMVC/doLogin" method="get">
-		Customer ID (id001, id002, id003, id004, id005);
-		<input type="text" name="customerId" /><br/>
+	<form action="/sampleForm_first_homework/doLogin" method="get">
+		Customer ID (id001, id002, id003, id004, id005);<br/>
+		ID: <input type="text" name="customerId" /><br/>
+		PW: <input type="password" name="customerPw"/><br/>
 		<input type="submit" value="press"/>
 		
 	</form>

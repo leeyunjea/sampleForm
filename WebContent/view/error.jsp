@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-This is help page
+This is error.jsp
 </body>
 </html>
