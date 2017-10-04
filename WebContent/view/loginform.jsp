@@ -9,7 +9,8 @@
 <body>
 
 	<form action="/sampleForm_first_homework/doLogin" method="get">
-		Customer ID (id001, id002, id003, id004, id005);<br/>
+		Customer ID (id001, id002, id003, id004, id005)<br/>
+		Customer PW (1234)<br/>
 		ID: <input type="text" name="customerId" /><br/>
 		PW: <input type="password" name="customerPw"/><br/>
 		<input type="submit" value="press"/>
