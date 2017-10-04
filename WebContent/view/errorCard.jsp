@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	This is help page
-
+카드번호를 다시 입력해 주세요.
 </body>
 </html>

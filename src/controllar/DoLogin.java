@@ -16,44 +16,44 @@ import service.CustomerService;
 /**
  * Servlet implementation class DoLogin
  */
-//@WebServlet(name = "doLogin", urlPatterns = { "/doLogin" })
 @WebServlet("/doLogin")
 public class DoLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public DoLogin() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			
+	public DoLogin() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		String customerId = request.getParameter("customerId");
 		String customerPw = request.getParameter("customerPw");
-		
+
 		CustomerService service = new CustomerService();
 		Customer customer = service.findCustomer(customerId);
 		request.setAttribute("customer", customer);
-		
+
 		List<Customer> customerList = service.getAllCustomers();
 		request.setAttribute("customers", customerList);
-		
-		
+
 		String page;
-		if((customer != null) && (customer.getPassword().equals(customerPw)))
+		if ((customer != null) && (customer.getPassword().equals(customerPw)))
 			page = "/view/form.jsp";
 		else
 			page = "/view/error.jsp";
-		
+
 		RequestDispatcher dispatcher = request.getRequestDispatcher(page);
 		dispatcher.forward(request, response);
-		
+
 	}
 
 }
